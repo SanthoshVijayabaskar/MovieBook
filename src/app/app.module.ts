@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MovieBoardComponent } from './movie-board/movie-board.component';
 import { SearchComponent } from './search/search.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { FeedbackComponent } from './feedback/feedback.component';
     NavbarComponent,
     MovieBoardComponent,
     SearchComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    MovieCardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
