@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MovieBoardComponent } from './movie-board/movie-board.component';
-import { SearchComponent } from './search/search.component';
-import { FeedbackComponent } from './feedback/feedback.component';
+import { TicketsComponent } from './tickets/tickets.component';
+import { AboutComponent } from './about/about.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -18,8 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     MovieBoardComponent,
-    SearchComponent,
-    FeedbackComponent,
+    TicketsComponent,
+    AboutComponent,
     MovieCardComponent,
   ],
   imports: [

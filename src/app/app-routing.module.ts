@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MovieBoardComponent } from './movie-board/movie-board.component';
-import { SearchComponent } from './search/search.component';
-import { FeedbackComponent } from './feedback/feedback.component';
+import { TicketsComponent } from './tickets/tickets.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -10,12 +10,12 @@ const routes: Routes = [
     component: MovieBoardComponent,
   },
   {
-    path:'search',
-    component: SearchComponent,
+    path:'my-tickets',
+    component: TicketsComponent,
   },
   {
-    path:'feedback',
-    component: FeedbackComponent,
+    path:'about-moviebook',
+    component: AboutComponent,
   }
 ];
 

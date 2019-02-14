@@ -9,6 +9,7 @@ import { MovieDataService } from '../movie-data.service';
 })
 export class MovieBoardComponent implements OnInit {
 
+  name: String = "Santhosh Vijay";
   movies$: Object;
 
   constructor(private data: MovieDataService) { }
