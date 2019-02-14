@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { MovieDataService } from '../movie-data.service';
 
 @Component({
   selector: 'app-movie-board',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieBoardComponent implements OnInit {
 
-  constructor() { }
+  movies$: Object;
 
+  constructor(private data: MovieDataService) { }
+
+  //OnInit - Lifecycle Hooks - Executed when components Loads
   ngOnInit() {
+    this.data.getMovies().subscribe(
+      data => this.movies$ = data
+    )
   }
 
 }

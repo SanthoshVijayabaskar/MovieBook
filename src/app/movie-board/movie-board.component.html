@@ -1,8 +1,10 @@
+<h1>Now Showing</h1>
 <div>
-    <mat-grid-list cols="4" rowHeight="2:4">
-        <mat-grid-tile><app-movie-card>loading</app-movie-card></mat-grid-tile>
-        <mat-grid-tile><app-movie-card>loading</app-movie-card></mat-grid-tile>
-        <mat-grid-tile><app-movie-card>loading</app-movie-card></mat-grid-tile>
-        <mat-grid-tile><app-movie-card>loading</app-movie-card></mat-grid-tile>
-    </mat-grid-list>
+        <mat-grid-list cols="4" rowHeight="2:4">
+            <mat-grid-tile  *ngFor="let movie of movies$">
+                <div class="card-padding">
+                <app-movie-card [movie]="movie">loading</app-movie-card>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
 </div>

@@ -1,5 +1,10 @@
 .movie-card {
-  max-width: 350px;
+  max-width: 270px;
 }
 
 .material-icons.red { color: rgb(251, 0, 0); }
+
+.mat-card-image {
+  max-width: 270px;
+  max-height: 275px;
+}

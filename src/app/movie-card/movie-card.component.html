@@ -1,14 +1,12 @@
 <mat-card class="movie-card">
     <mat-card-header>
-      <mat-card-title>The Lego Movie</mat-card-title>
-      <mat-card-subtitle>Year: 2019 | Rating: 8.0 | Runtime: 112 Minutes</mat-card-subtitle>
+      <mat-card-title>{{movie.title}}</mat-card-title>
+      <mat-card-subtitle>{{movie.year}} | Rating: {{movie.rating}} | {{movie.runtime}} Minutes</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://i.ibb.co/Gn162Sv/lego-movie.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="{{movie.poster}}" alt="{{movie.title}}">
     <mat-card-content>
       <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
+       {{movie.description}}
       </p>
     </mat-card-content>
     <mat-card-actions>

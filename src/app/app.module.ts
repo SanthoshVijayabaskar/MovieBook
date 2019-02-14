@@ -11,6 +11,8 @@ import { SearchComponent } from './search/search.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { MovieCardComponent } from './movie-card/movie-card.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
